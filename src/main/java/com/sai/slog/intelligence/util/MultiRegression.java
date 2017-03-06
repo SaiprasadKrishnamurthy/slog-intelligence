@@ -23,7 +23,7 @@ public class MultiRegression {
         return sum;
     }
 
-    public static void main(String[] args) {
+    public static void mains(String[] args) {
         double x[][] = {
                 {3000, 100}, {6000, 512}, {10000, 1024},
                 {10000, 2048}, {20000, 2048}, {20000, 3072},
