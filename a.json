@@ -1,0 +1,95 @@
+{
+  "logMessage": "com.cisco.server.pojohelpers.common.ProvisioningHelperImpl.createObjectInDevice(ProvisioningHelperImpl.java:1512) \nat com.cisco.server.pojohelpers.common.ProvisioningHelperImpl.provision2(ProvisioningHelperImpl.java:358) \nat com.cisco.server.managedobjects.bridge.TrapReceiver.provision2(TrapReceiver.java:459) \nat com.cisco.server.pojohelpers.common.ProvisioningHelperImpl.provision(ProvisioningHelperImpl.java:221) \nat com.cisco.server.managedobjects.bridge.TrapReceiver.provision(TrapReceiver.java:454) \nat com.cisco.server.polling.PollDeviceStatus.updateTrapReceiver(PollDeviceStatus.java:1471) \nat com.cisco.server.polling.PollDeviceStatus.handleSwitchUp(PollDeviceStatus.java:394) \nat com.cisco.server.polling.PollDeviceStatus.pollSwitch(PollDeviceStatus.java:495) \nat com.cisco.server.polling.PollDeviceStatus.access$000(PollDeviceStatus.java:112) \nat com.cisco.server.polling.PollDeviceStatus$PollSwitchThread.runTask(PollDeviceStatus.java:1564) \nat com.cisco.server.util.WCSThreadPool$Task.run(WCSThreadPool.java:41) \nat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) \nat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) \nat java.lang.Thread.run(Thread.java:745)",
+  "component": "reports",
+  "description": "Failure to generate reports",
+  "disabled": false,
+  "directlyCausedBy": [
+    {
+      "logMessage": "DeviceObjectNoCreationException",
+      "component": "inventory",
+      "description": "Failure to add a device",
+      "disabled": false,
+      "directlyCausedBy": [
+        {
+          "logMessage": "Device not reachable DeviceUnreachableException",
+          "component": "system",
+          "description": "Device not reachable",
+          "disabled": false,
+          "directlyCausedBy": [
+            {
+              "logMessage": "palError",
+              "component": "monitor",
+              "description": "PAL Error",
+              "disabled": false,
+              "directlyCausedBy": [],
+              "potentiallyCausedBy": []
+            }
+          ],
+          "potentiallyCausedBy": []
+        }
+      ],
+      "potentiallyCausedBy": []
+    },
+    {
+      "logMessage": "Write community string not specified",
+      "component": "system",
+      "description": "Write community string not specified Error",
+      "disabled": false,
+      "directlyCausedBy": [
+        {
+          "logMessage": "zzzzzzz",
+          "component": "system",
+          "description": "DB Outage Error",
+          "disabled": false,
+          "directlyCausedBy": [
+            {
+              "logMessage": "zzzzzzz",
+              "component": "system",
+              "description": "System Error",
+              "disabled": false,
+              "directlyCausedBy": [],
+              "potentiallyCausedBy": []
+            }
+          ],
+          "potentiallyCausedBy": []
+        },
+        {
+          "logMessage": "zzzzzzz",
+          "component": "system",
+          "description": "Cause of Spring Error",
+          "disabled": false,
+          "directlyCausedBy": [],
+          "potentiallyCausedBy": []
+        }
+      ],
+      "potentiallyCausedBy": []
+    },
+    {
+      "logMessage": "zzzzzzzz",
+      "component": "system",
+      "description": "DB Constraint Error",
+      "disabled": false,
+      "directlyCausedBy": [
+        {
+          "logMessage": "zzzzzzz",
+          "component": "system",
+          "description": "DB Outage Error",
+          "disabled": false,
+          "directlyCausedBy": [
+            {
+              "logMessage": "zzzzzz",
+              "component": "system",
+              "description": "System Error",
+              "disabled": false,
+              "directlyCausedBy": [],
+              "potentiallyCausedBy": []
+            }
+          ],
+          "potentiallyCausedBy": []
+        }
+      ],
+      "potentiallyCausedBy": []
+    }
+  ],
+  "potentiallyCausedBy": []
+}
